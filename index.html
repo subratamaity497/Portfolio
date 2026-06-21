@@ -442,9 +442,165 @@
             }
         }
 
-        /* Scroll animation */
-        .fade-in {
-            animation: fadeIn 0.8s ease;
+        /* Training & Certifications */
+        .training-item {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 0.75rem;
+            border-left: 4px solid var(--accent-light);
+            transition: all 0.3s ease;
+        }
+
+        .training-item:hover {
+            background: rgba(30, 41, 59, 0.8);
+            transform: translateX(5px);
+        }
+
+        .training-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .training-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-light);
+        }
+
+        .training-organization {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 0.25rem;
+        }
+
+        .training-date {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .training-description {
+            color: var(--text-muted);
+            margin-top: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .training-status {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .status-completed {
+            background: rgba(34, 197, 94, 0.15);
+            color: #86efac;
+            border: 1px solid rgba(34, 197, 94, 0.3);
+        }
+
+        .status-progress {
+            background: rgba(59, 130, 246, 0.15);
+            color: var(--accent-light);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        .cert-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.2rem;
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--accent);
+            text-decoration: none;
+            border-radius: 0.5rem;
+            border: 1px solid var(--accent);
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cert-link:hover {
+            background: rgba(59, 130, 246, 0.3);
+            color: var(--accent-light);
+            border-color: var(--accent-light);
+        }
+
+        /* Publications & Research */
+        .publication-item {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 0.75rem;
+            border-left: 4px solid #8b5cf6;
+            transition: all 0.3s ease;
+        }
+
+        .publication-item:hover {
+            background: rgba(30, 41, 59, 0.8);
+            transform: translateX(5px);
+        }
+
+        .pub-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #c4b5fd;
+            line-height: 1.4;
+            margin-bottom: 0.75rem;
+        }
+
+        .pub-meta {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .pub-field {
+            color: var(--text-muted);
+        }
+
+        .pub-field strong {
+            color: #c4b5fd;
+        }
+
+        .pub-status {
+            display: inline-block;
+            padding: 0.4rem 0.9rem;
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .status-under-review {
+            background: rgba(139, 92, 246, 0.15);
+            color: #d8b4fe;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .status-draft {
+            background: rgba(168, 85, 247, 0.15);
+            color: #e9d5ff;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+
+        .pub-description {
+            color: var(--text-muted);
+            margin-top: 1rem;
+            line-height: 1.7;
+        }
+
+        .pub-details {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
 
         @keyframes fadeIn {
@@ -467,6 +623,8 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#publications">Publications</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -543,7 +701,82 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Training Section -->
+    <section id="training">
+        <div class="section-container">
+            <h2 class="section-title">Training & Certifications</h2>
+            
+            <div class="training-item fade-in">
+                <div class="training-header">
+                    <div>
+                        <div class="training-organization">Nullcon, Goa</div>
+                        <div class="training-title">DevSecOps - A Hands-on Experience</div>
+                    </div>
+                    <div class="training-date">Feb 26-28, 2025</div>
+                </div>
+                <p class="training-description">
+                    Intensive 3-day hands-on workshop covering DevSecOps practices, secure SDLC integration, CI/CD security hardening, container security, infrastructure as code security, and cloud security best practices.
+                </p>
+                <span class="training-status status-completed">✓ Completed</span>
+                <a href="certificate.pdf" target="_blank" class="cert-link">📄 View Certificate</a>
+            </div>
+
+            <div class="training-item fade-in">
+                <div class="training-header">
+                    <div>
+                        <div class="training-organization">EC-Council</div>
+                        <div class="training-title">Certified Ethical Hacker (CEH v13)</div>
+                    </div>
+                    <div class="training-date">Exam Preparation</div>
+                </div>
+                <p class="training-description">
+                    Comprehensive training in ethical hacking, penetration testing, vulnerability assessment, network security, and cybersecurity frameworks. Intensive preparation covering all 18 modules with focus on IoT/OT hacking and mobile platform security.
+                </p>
+                <span class="training-status status-progress">⏳ In Progress - Exam Preparation</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications & Research Section -->
+    <section id="publications">
+        <div class="section-container">
+            <h2 class="section-title">Publications & Research</h2>
+            
+            <div class="publication-item fade-in">
+                <div class="pub-title">E-Document Validation with Authentic Signature Share Based Digital Signature Protocol Implementation Approach</div>
+                
+                <div class="pub-meta">
+                    <div class="pub-field"><strong>Field:</strong> Cryptography & Digital Security</div>
+                    <div class="pub-field"><strong>Focus:</strong> E-Document Authentication</div>
+                </div>
+
+                <span class="pub-status status-draft">Draft - Manuscript Completed</span>
+
+                <p class="pub-description">
+                    Research work on implementing a robust digital signature protocol for e-document validation using authentic signature sharing techniques. The implementation approach focuses on enhancing security, preventing forgery, and ensuring non-repudiation in digital document transactions.
+                </p>
+
+                <div class="pub-details">
+                    <strong>Status:</strong> Manuscript completed and under preparation for journal submission<br>
+                    <strong>Target Domain:</strong> Cybersecurity, Cryptography, Digital Signature Protocols<br>
+                    <strong>Current Work:</strong> Refining implementation, conducting security analysis, preparing for peer review submission
+                </div>
+            </div>
+
+            <div class="publication-item fade-in" style="margin-top: 2rem;">
+                <div style="color: var(--accent); font-weight: 600; margin-bottom: 1rem;">🔍 Active Research Areas</div>
+                <p class="pub-description" style="margin-top: 0;">
+                    Currently exploring advanced topics in cybersecurity with focus on:
+                </p>
+                <ul style="margin-top: 1rem; margin-left: 1.5rem; color: var(--text-muted);">
+                    <li style="margin-bottom: 0.5rem;">IoT/OT Security and vulnerabilities in industrial control systems</li>
+                    <li style="margin-bottom: 0.5rem;">Supply Chain Security and software dependency management</li>
+                    <li style="margin-bottom: 0.5rem;">DevSecOps practices and secure SDLC implementation</li>
+                    <li style="margin-bottom: 0.5rem;">Cloud security and infrastructure hardening</li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <section id="skills">
         <div class="section-container">
             <h2 class="section-title">Skills</h2>
@@ -638,7 +871,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Subrata Maity. All rights reserved.</p>
+        <p>&copy; 2026 Subrata Maity. All rights reserved.</p>
         <p style="margin-top: 0.5rem; font-size: 0.9rem;">Crafted with care for the tech community</p>
     </footer>
 
