@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subrata Maity - Full Stack Developer & Infrastructure Engineer</title>
+    <title>Subrata Maity - Scientist-C | Infrastructure & Full Stack Engineer</title>
     <style>
         * {
             margin: 0;
@@ -276,6 +276,19 @@
             font-size: 0.95rem;
         }
 
+        .exp-badge {
+            display: inline-block;
+            margin-left: 0.75rem;
+            padding: 0.2rem 0.7rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            vertical-align: middle;
+            background: rgba(34, 197, 94, 0.15);
+            color: #86efac;
+            border: 1px solid rgba(34, 197, 94, 0.3);
+        }
+
         .exp-description {
             color: var(--text-muted);
             margin-top: 1rem;
@@ -293,6 +306,10 @@
             position: absolute;
             left: 0;
             color: var(--accent);
+        }
+
+        .exp-description li strong {
+            color: var(--text-light);
         }
 
         /* Skills */
@@ -636,9 +653,9 @@
     <section id="about" class="hero fade-in">
         <div class="hero-content">
             <h1>Subrata Maity</h1>
-            <p class="title">Scientist-B | Full Stack Developer & Infrastructure Engineer</p>
-            <p>Results-driven developer with expertise in building secure, scalable web applications and robust infrastructure solutions. Passionate about DevOps, cybersecurity hardening, and cloud automation.</p>
-            
+            <p class="title">Scientist-C, C-DOT | Infrastructure & Full Stack Engineer</p>
+            <p>Systems engineer with an M.Tech in Computer Science and Engineering from NIT Durgapur and four years of R&amp;D experience at C-DOT, the Government of India's telecom research centre. I work on distributed infrastructure, systems security, and large-scale virtualization — CI/CD automation across data centre and disaster-recovery sites, a 1000+ VM estate on VMware, Proxmox and OpenStack, and replicated object storage on MinIO clusters.</p>
+
             <div class="cta-buttons">
                 <a href="#contact" class="btn btn-primary">Get in Touch</a>
                 <a href="#experience" class="btn btn-secondary">View My Work</a>
@@ -652,7 +669,7 @@
                     <strong>📞 Phone:</strong> +91-9883052175
                 </div>
                 <div class="contact-item">
-                    <strong>✉️ Email:</strong> subratamaity497@gmail.com
+                    <strong>✉️ Email:</strong> sbrtmt7@gmail.com
                 </div>
             </div>
         </div>
@@ -668,21 +685,37 @@
     <section id="experience">
         <div class="section-container">
             <h2 class="section-title">Experience</h2>
-            
+
             <div class="experience-item fade-in">
                 <div class="exp-header">
                     <div>
-                        <div class="exp-company">Centre for Development of Telematics</div>
-                        <div class="exp-title">Scientist-B</div>
+                        <div class="exp-company">Centre for Development of Telematics (C-DOT)</div>
+                        <div class="exp-title">Scientist-C<span class="exp-badge">Current</span></div>
                     </div>
-                    <div class="exp-date">Aug 2022 – Present</div>
+                    <div class="exp-date">Apr 2025 – Present</div>
                 </div>
                 <ul class="exp-description">
-                    <li>Developed secure, scalable web portals using MERN stack with RBAC and OAuth 2.0 access control</li>
-                    <li>Implemented CI/CD pipelines and automated deployment using Ansible playbooks and PowerShell scripts</li>
-                    <li>Deployed enterprise-grade MinIO cluster with secure data replication and continuous synchronization</li>
-                    <li>Enhanced security with Fail2Ban, SSL certificates, and automated password rotation</li>
-                    <li>Optimized SQL queries and backend logic for data-driven features and improved performance</li>
+                    <li><strong>IPARR Project – EDCH:</strong> Contributed to the design and rollout of the IPARR platform, working on the EDCH component and its integration with the wider service stack across Data Centre and Data Recovery Centre environments</li>
+                    <li><strong>Infrastructure Automation:</strong> Implemented CI/CD pipelines and automated deployment and configuration of services across Development, Data Centre, and Data Recovery Centre environments using Ansible playbooks and PowerShell scripts</li>
+                    <li><strong>Virtualization &amp; VM Management:</strong> Oversaw virtualization environments with VMware, Proxmox, and OpenStack, provisioning and maintaining over 1000 virtual machines via vCenter and VMCLI</li>
+                    <li><strong>Centralized Storage System:</strong> Implemented enterprise-grade storage using a MinIO cluster with secure data replication, access control, and continuous bucket synchronization</li>
+                    <li><strong>Security &amp; Failover Support:</strong> Enhanced security and failover capabilities by deploying Fail2Ban and SSL certificates, automating password rotation, and supporting disaster recovery for mission-critical services</li>
+                </ul>
+            </div>
+
+            <div class="experience-item fade-in">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-company">Centre for Development of Telematics (C-DOT)</div>
+                        <div class="exp-title">Scientist-B</div>
+                    </div>
+                    <div class="exp-date">Aug 2022 – Mar 2025</div>
+                </div>
+                <ul class="exp-description">
+                    <li><strong>Web Application Development:</strong> Collaborated with cross-functional teams to develop secure, scalable web portals using the MERN stack, aligned with Agile SDLC and secure coding practices</li>
+                    <li>Developed secure RBAC-enabled portals using Node.js, MongoDB, and Elasticsearch to enhance application performance and auditability</li>
+                    <li><strong>Application Development &amp; Optimization:</strong> Built secure, scalable RESTful APIs with OAuth 2.0 access control and applied core data structures for performance optimization</li>
+                    <li>Improved application responsiveness through profiling, refactoring, and adherence to Agile development practices</li>
                 </ul>
             </div>
 
@@ -692,10 +725,10 @@
                         <div class="exp-company">Comviva</div>
                         <div class="exp-title">Developer Intern</div>
                     </div>
-                    <div class="exp-date">Jan 2022 – July 2022</div>
+                    <div class="exp-date">Jan 2022 – Jul 2022</div>
                 </div>
                 <ul class="exp-description">
-                    <li>Designed and implemented full-stack web portal using MERN stack with secure development principles</li>
+                    <li><strong>Full Stack Development:</strong> Designed and implemented a full-stack web portal using the MERN stack, following secure development lifecycle principles</li>
                 </ul>
             </div>
         </div>
@@ -719,20 +752,6 @@
                 </p>
                 <span class="training-status status-completed">✓ Completed</span>
                 <a href="certificate.pdf" target="_blank" class="cert-link">📄 View Certificate</a>
-            </div>
-
-            <div class="training-item fade-in">
-                <div class="training-header">
-                    <div>
-                        <div class="training-organization">EC-Council</div>
-                        <div class="training-title">Certified Ethical Hacker (CEH v13)</div>
-                    </div>
-                    <div class="training-date">Exam Preparation</div>
-                </div>
-                <p class="training-description">
-                    Comprehensive training in ethical hacking, penetration testing, vulnerability assessment, network security, and cybersecurity frameworks. Intensive preparation covering all 18 modules with focus on IoT/OT hacking and mobile platform security.
-                </p>
-                <span class="training-status status-progress">⏳ In Progress - Exam Preparation</span>
             </div>
         </div>
     </section>
@@ -788,7 +807,6 @@
                         <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">C++</span>
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
                     </div>
                 </div>
 
@@ -796,35 +814,49 @@
                     <h3>Full Stack Development</h3>
                     <div class="skill-items">
                         <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Express</span>
                         <span class="skill-tag">React</span>
                         <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
                         <span class="skill-tag">Elasticsearch</span>
+                        <span class="skill-tag">REST APIs</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>DevOps & Automation</h3>
+                    <h3>Automation &amp; DevOps</h3>
                     <div class="skill-items">
                         <span class="skill-tag">Ansible</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">Shell Scripting</span>
                         <span class="skill-tag">PowerShell</span>
+                        <span class="skill-tag">Shell Scripting</span>
+                        <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CI/CD</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Security & Testing</h3>
+                    <h3>Virtualization &amp; Cloud</h3>
                     <div class="skill-items">
-                        <span class="skill-tag">Cybersecurity</span>
-                        <span class="skill-tag">Pentesting</span>
-                        <span class="skill-tag">Unit Testing</span>
-                        <span class="skill-tag">Debugging</span>
-                        <span class="skill-tag">Root Cause Analysis</span>
+                        <span class="skill-tag">VMware</span>
+                        <span class="skill-tag">Proxmox</span>
+                        <span class="skill-tag">OpenStack</span>
+                        <span class="skill-tag">MinIO</span>
+                        <span class="skill-tag">vCenter</span>
+                        <span class="skill-tag">VMCLI</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cyber Security</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Penetration Testing</span>
+                        <span class="skill-tag">Secure Coding</span>
+                        <span class="skill-tag">OAuth 2.0 / RBAC</span>
+                        <span class="skill-tag">Fail2Ban</span>
+                        <span class="skill-tag">SSL/TLS</span>
                     </div>
                 </div>
             </div>
@@ -861,10 +893,10 @@
             <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">I'm always interested in hearing about new projects and opportunities.</p>
             
             <div class="social-links">
-                <a href="mailto:subratamaity497@gmail.com">Email</a>
+                <a href="mailto:sbrtmt7@gmail.com">Email</a>
                 <a href="tel:+919883052175">Phone</a>
-                <a href="https://www.linkedin.com/in/subratamaity/" target="_blank">LinkedIn</a>
-                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/subrata-maity-718453188/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
             </div>
         </div>
     </section>
@@ -902,7 +934,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.experience-item, .education-item').forEach(el => {
+        document.querySelectorAll('.experience-item, .education-item, .training-item, .publication-item').forEach(el => {
             observer.observe(el);
         });
     </script>
